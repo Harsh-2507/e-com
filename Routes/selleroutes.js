@@ -12,3 +12,5 @@ router.post("/getproducts", auth, getproducts )
 router.post("/getproduct", auth, getproduct)
 router.post("updateproduct", auth, updateproduct)
 router.post("/updateseller", auth, updateseller)
+
+module.exports = router

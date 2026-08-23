@@ -18,7 +18,7 @@ const loginschema = joi.object({
 })
 const pass_schema = joi.object({
     currentpassword: joi.string().min(6).max(20).required(),
-    newpassword: joi.string.min(6).max(20).required()
+    newpassword: joi.string().min(6).max(20).required()
 })
 
 const addresschema = joi.object({
@@ -36,7 +36,7 @@ const notallowed = joi.object({
 
 const adminschema = joi.object({
     userid: joi.string().required(),
-    permission: joi.array().items(joi.string().valid(valid_permissions)).required() 
+    permission: joi.array().items(joi.string().valid(...valid_permissions)).required() 
 })
 
 

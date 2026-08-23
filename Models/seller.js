@@ -1,4 +1,3 @@
-const { string, boolean } = require("joi")
 const mongoose = require("mongoose")
 const usermodel = require("./user")
 
@@ -95,12 +94,12 @@ const sellerschema = mongoose.Schema({
     },
 
     isVerified:{
-        type: boolean,
+        type: Boolean,
         default: false
     },
 
     isBlocked:{
-        type: boolean,
+        type: Boolean,
         default: false
     },
 

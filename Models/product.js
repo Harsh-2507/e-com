@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 const sellermodel = require("./seller.js")
-const { boolean } = require("joi")
 const productschema = mongoose.Schema({
     
     title: {
@@ -58,7 +57,7 @@ const productschema = mongoose.Schema({
     },
 
     isverified:{
-        type: boolean,
+        type: Boolean,
         default: false
     }
 
